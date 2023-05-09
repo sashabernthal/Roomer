@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Signup Page</title> 
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <link rel="stylesheet" type="text/css" href="../static/styles/signup.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <a class="navbar-brand" href="#">Roomer</a>
+    </nav>
+    <div class="container">
+        <div class="welcome-message">
+          <h2>Welcome to Roomer!</h2>
+          <h4>Please fill out your information below to sign up and find matches</h4>
+        </div>
+        <div class="signup-container">
+            <form>
+              <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+              </div>
+              <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+              </div>
+              <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password">
+              </div>
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+              </div>
+              <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="bio">Bio:</label>
+                <textarea id="bio" name="bio"></textarea>
+              </div>
+              <div class="interests-container">
+                <div class="interests-label">Interests:</div>
+                <div class="interests-options">
+                  <label><input type="checkbox" name="sports">Sports</label>
+                  <label><input type="checkbox" name="music">Music</label>
+                  <label><input type="checkbox" name="traveling">Traveling</label>
+                  <label><input type="checkbox" name="reading">Reading</label>
+                  <label><input type="checkbox" name="art">Art</label>
+                  <label><input type="checkbox" name="dance">Dance</label>
+                  <label><input type="checkbox" name="video-games">Video Games</label>
+                  <label><input type="checkbox" name="working-out">Working Out</label>
+                  <label><input type="checkbox" name="cooking">Cooking</label>
+                </div>
+              </div>
+              <button type="submit">Create Account</button>
+            </form>
+        </div>
+    </div>
+  </body>
+</html>

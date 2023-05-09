@@ -1,0 +1,121 @@
+nav {
+	background-color: #CFD5DC;
+	color: white;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #4672E2;
+    text-shadow: 1px 1px 0 #000, 
+               -1px -1px 0 #000, 
+               1px -1px 0 #000, 
+               -1px 1px 0 #000;
+  }
+
+.nav-container {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.nav-left, .nav-right {
+	display: flex;
+}
+
+.nav-left a, .nav-right a {
+	margin-left: 10px;
+	color: white;
+	text-decoration: none;
+}
+
+.navbar-items {
+    font-size: 30px;
+    color: black;
+    display: flex;
+    align-items: right;
+    flex-direction: row;
+  }
+  
+
+header {
+	background-color: #CFD5DC;
+	color: white;
+	padding: 20px;
+    max-height: 100px;
+}
+
+h1 {
+	margin: 0;
+}
+
+.matches {
+    margin-right: 50px;
+}
+
+.matches-title {
+    color: black;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 20px;
+}
+
+.match-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.match-box {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: #f5f5f5;
+	border-radius: 10px;
+	box-shadow: 0px;
+	margin: 20px;
+	padding: 20px;
+	width: 90%;
+	max-width: 500px;
+}
+
+.match-box:last-child {
+	margin-bottom: 0;
+}
+
+.profile-pic {
+	border-radius: 50%;
+	height: 100px;
+	margin-right: 20px;
+	object-fit: cover;
+	width: 100px;
+}
+
+.match-info {
+	display: flex;
+	flex-direction: column;
+}
+
+.match-name {
+	font-size: 24px;
+	margin: 0;
+	margin-bottom: 5px;
+}
+
+.match-gender {
+	color: #666;
+	font-size: 18px;
+	font-style: italic;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.match-bio {
+	font-size: 18px;
+	margin: 0;
+}
