@@ -30,6 +30,15 @@ body {
                1px -1px 0 #000, 
                -1px 1px 0 #000;
   }
+
+
+  .new-account {
+    margin-top: 40px;
+    max-width: 200px;
+    margin-left: 100px;
+    background-color: blue;
+  }
+  
   
   .container {
     display: flex;

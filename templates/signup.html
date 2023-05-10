@@ -21,7 +21,7 @@
           <h4>Please fill out your information below to sign up and find matches</h4>
         </div>
         <div class="signup-container">
-            <form>
+            <form method="POST">
               <div class="form-group">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username">
@@ -39,6 +39,10 @@
                 <input type="text" id="name" name="name">
               </div>
               <div class="form-group">
+                <label for="name">University:</label>
+                <input type="text" id="university" name="university">
+              </div>
+              <div class="form-group">
                 <label for="gender">Gender:</label>
                 <select id="gender" name="gender">
                   <option value="male">Male</option>
@@ -52,7 +56,7 @@
               </div>
               <div class="interests-container">
                 <div class="interests-label">Interests:</div>
-                <div class="interests-options">
+                <div class="interests-options" id="interests" name="interests">
                   <label><input type="checkbox" name="sports">Sports</label>
                   <label><input type="checkbox" name="music">Music</label>
                   <label><input type="checkbox" name="traveling">Traveling</label>
@@ -64,7 +68,7 @@
                   <label><input type="checkbox" name="cooking">Cooking</label>
                 </div>
               </div>
-              <button type="submit">Create Account</button>
+              <button href="/profile" class="new-account">Create Account</button>
             </form>
         </div>
     </div>

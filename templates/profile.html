@@ -20,10 +20,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="navbar-items matches" href="#">Matches</a>
+              <a class="navbar-items matches" href="/matches">Matches</a>
             </li>
             <li class="nav-item">
-              <a class="navbar-items" href="#">Profile</a>
+              <a class="navbar-items" href="/profile">Profile</a>
             </li>
           </ul>
         </div>
@@ -32,29 +32,42 @@
         <div>
           <img src="https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/field_blog_entry_images/2018-09/shutterstock_648907024.jpg?itok=7lrLYx-B" alt="Profile Picture" class="profile-picture">
           <div class="user-info">
-            <h1 class="user-name">John Doe</h1>
-            <p class="user-gender">Male</p>
+            <h1 class="user-name">{{ user.name }}</h1>
+            <p class="user-gender">{{ user.gender }}</p>
           </div>
         </div>
        </div>
        <div class="centered-container">
         <form>
-            <div>
-                <label for="university">University:</label>
-                <input class="form-group" type="text" id="university" name="university">
-            </div>
-            <div>
+            <div class="bio-uni">
+              <label for="bio">University:</label>
+              <label for="bio">{{ user.university }}</label>
+                </div>
+            <div class="bio-uni">
                 <label for="bio">Bio:</label>
-                <input class="form-group" id="bio" name="bio">
+                <label for="bio">{{ user.bio }}</label>
             </div>
             <div>
-                <label for="interests">Interests:</label>
-                <input class="form-group" type="text" id="interests" name="interests">
-            </div>
+                <label for="interests" class="interest-header">Interests:</label>
+                {% block content %}
+                <ul>
+                <ul class="interest">Sports: {% if user.sports %}Yes{% else %}No{% endif %}</ul>
+                <ul class="interest">Music: {% if user.music %}Yes{% else %}No{% endif %}</ul>
+                <ul class="interest">Traveling: {% if user.traveling %}Yes{% else %}No{% endif %}</ul>
+                <ul class="interest">Reading: {% if user.sports %}Yes{% else %}No{% endif %}</ul>
+                <ul class="interest">Art: {% if user.music %}Yes{% else %}No{% endif %}</ul>
+                <ul class="interest">Dance: {% if user.traveulng %}Yes{% else %}No{% endif %}</ul>
+                <ul class="interest">Video Games: {% if user.sports %}Yes{% else %}No{% endif %}</ul>
+                <ul class="interest">Working Out: {% if user.music %}Yes{% else %}No{% endif %}</ul>
+                <ul class="interest">Cooking: {% if user.traveling %}Yes{% else %}No{% endif %}</ul>
+                {% endblock %}
+                </div>
         </form>
         <a href="/logout">Logout</a>
        </div>
-      
+
+  
+        
       
       
       

@@ -41,7 +41,28 @@ body {
     text-align: center;
     margin-bottom: 20px;
   }
+
+  .new-account {
+    margin-top: 40px;
+    max-width: 200px;
+    margin-left: 100px;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #4672E2;
+    border-radius: 5px;
+    color: white;
+  }
   
+  .login-button {
+    margin-top: 40px;
+    margin-left: 100px;
+    padding: 5px 10px;
+    background-color: #4672E2;
+    border-radius: 5px;
+    color: white;
+  }
+  
+
   .login-container {
     background-color: #CFD5DC;
     margin: 20px auto 0;
